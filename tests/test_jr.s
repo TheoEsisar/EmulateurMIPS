@@ -1,0 +1,20 @@
+ADDI $1, $0, 16
+ADDI $31, $0, 120
+JR $1
+NOP
+JR $31
+NOP
+# JR $-5       # Erreur : Caractère non respecté
+
+# EXPECTED_ASSEMBLY
+# 20010010
+# 201f0078
+# 00200008
+# 00000000
+# 03e00008
+# 00000000
+
+
+# EXPECTED_FINAL_STATE
+# $01:16
+# $31:120

@@ -1,0 +1,14 @@
+ADDI $7, $0, 5
+ROTR $8, $7, 10
+ROTR $9, $7, 20
+# ROTR $30, $10, $6864        # Erreur : Registre trop grand
+
+# EXPECTED_ASSEMBLY
+# 20070005
+# 00274282
+# 00274d02
+
+# EXPECTED_FINAL_STATE
+# $07:5
+# $08:20971520
+# $09:20480

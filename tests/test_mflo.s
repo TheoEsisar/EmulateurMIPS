@@ -1,0 +1,9 @@
+MFLO $0
+MFLO $31
+#MFLO $40        # Erreur : Registre trop grand
+
+# EXPECTED_ASSEMBLY
+# 00000012
+# 0000f812
+
+# EXPECTED_FINAL_STATE

@@ -1,0 +1,13 @@
+BGTZ $2, 1864
+NOP
+BGTZ $22, 0
+NOP
+# BGTZ $30, -50000        # Erreur : Valeur hors limite
+
+# EXPECTED_ASSEMBLY
+# 1c400748
+# 00000000
+# 1ec00000
+# 00000000
+
+# EXPECTED_FINAL_STATE

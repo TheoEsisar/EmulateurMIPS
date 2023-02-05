@@ -1,0 +1,23 @@
+ADDI $1, $0, 1
+SLL $2, $1, 29
+MULT $2, $2
+
+MFHI $9
+MFHI $20
+# MHFI $test      # Erreur : L'instruction est inconnue
+
+# EXPECTED_ASSEMBLY
+# 20010001
+# 00011740
+# 00420018
+# 00004810
+# 0000a010
+
+
+# EXPECTED_FINAL_STATE
+# $01:1
+# $02:536870912
+# $09:67108864
+# $20:67108864
+# HI:67108864
+# LO:0

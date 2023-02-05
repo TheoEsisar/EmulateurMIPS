@@ -1,0 +1,9 @@
+MULT $23, $7
+MULT $31, $18
+#MULT $0, $658874    # Erreur : Registre trop grand
+
+# EXPECTED_ASSEMBLY
+# 02e70018
+# 03f20018
+
+# EXPECTED_FINAL_STATE

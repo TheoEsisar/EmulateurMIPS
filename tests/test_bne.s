@@ -1,0 +1,13 @@
+BNE $4, $23, 2
+NOP
+BNE $31, $10, -2
+NOP
+# BNE $20, $8, 1000000    # Erreur : Valeur hors limite
+
+# EXPECTED_ASSEMBLY
+# 14970002
+# 00000000
+# 17eafffe
+# 00000000
+
+# EXPECTED_FINAL_STATE
