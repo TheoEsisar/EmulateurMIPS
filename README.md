@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">Réalisation d'un émulateur MIPS en language C avec différents modes de fonctionnements</p>
+<p align="left">Réalisation d'un émulateur MIPS en langage C avec différents modes de fonctionnements</p>
 
 ###
 
